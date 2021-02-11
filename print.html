@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Print !</h1>
+
+    <button onclick="printZpl()">Print!!</button>
+
+    <script>
+
+        
+
+        function printZpl() {
+            zpl = "Hello Sravan!!!";
+            var printWindow = window.open();
+            printWindow.document.open('text/plain')
+            printWindow.document.write(zpl);
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+            printWindow.close();
+        }
+
+    </script>
+</body>
+</html>
